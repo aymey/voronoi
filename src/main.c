@@ -1,7 +1,7 @@
 #include <raylib.h>
 #include "voronoi.h"
 
-#define POINTS 2
+#define POINTS 3
 int main(void) {
     SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     SetConfigFlags(FLAG_VSYNC_HINT);
@@ -17,5 +17,6 @@ int main(void) {
 
     CloseWindow();
 
+    free(points);
     return 0;
 }
