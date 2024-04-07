@@ -12,21 +12,21 @@ type HalfEdge struct {
 }
 
 type Face struct {
-    Site *Site
+    site *Site
     outerComponent *HalfEdge
 }
 
 type Site struct {
-    Index int
-    Point rl.Vector2
-    Face *Face
+    index int
+    point rl.Vector2
+    face *Face
 }
 
 type VoronoiDiagram struct {
-    Sites []Site
-    Faces []Face
-    Verticies []rl.Vector2
-    HalfEdges []HalfEdge
+    sites []Site
+    faces []Face
+    verticies []rl.Vector2
+    halfEdges []HalfEdge
 }
 
 func main() {
